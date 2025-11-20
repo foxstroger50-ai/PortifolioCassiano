@@ -129,11 +129,12 @@ hr {
 
 
 * {
-    max-width: 1300px;
+    max-width: 1200px;
   margin-left: 10px; /* empurra 20px pra direita */
   word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    transform: scale(0.97);
 }
 
 .powerbi {
@@ -145,7 +146,7 @@ hr {
     border: none;           /* remove a borda padrão */
     height: 2px;            /* define a espessura */
     background-color: rgb(231, 247, 11); /* cor da linha */
-    margin: 20px 0;         /* espaço acima e abaixo */
+    margin: 20px 0;         /* espaço ama e abaixo */
 }
 
 .python {
@@ -205,9 +206,14 @@ p {
 }
 
 #lindiv {
-      height: 5px;
-      background-color: rgb(119, 119, 119)
+    height: 5px;
+    background-color: rgb(119, 119, 119);
+    width: 100%;          /* assim a linha ocupa toda a largura permitida */
+    max-width: 2000px;    /* maior limite que você quer */
+    margin-left: 0;       /* impede o * de mover a linha para a direita */
 }
+
+
 
 .outras {
     background: linear-gradient(to right, rgb(181, 181, 240), blue);
@@ -240,4 +246,64 @@ p {
   line-height: 1.5;
 }
 
+#numpy {
+    max-width: 550px;
+    margin: 0 auto;
+}
 
+#centimg {
+    margin: 0 auto;
+}
+
+.test {
+    background: rgb(224, 224, 224);
+    border-radius:1%;
+    display: inline-block
+}
+
+.galeria-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#CP {
+    color:rgb(7, 86, 255);
+    font-size: 30px;
+}
+
+.img {
+    border-radius: 5%
+}
+
+.curso {
+    background:rgb(0, 0, 0);
+    border-radius: 4%;
+    border: 2px solid rgb(184, 184, 184)
+}
+
+#whats {
+    border-radius:5%;
+    max-width: 750px
+}
+
+.pandora {
+    font-size:20px
+}
+
+#CS {
+    color:rgb(0, 102, 255);
+    font-size: 30px;
+}
+
+.instagram {
+    border-radius:5%;
+    background: linear-gradient(to right, rgb(255, 0, 234), rgb(250, 159, 230));
+    max-width: 750px
+
+}
+
+.borda {
+    border-radius:;
+    border: 3px solid rgb(177, 177, 177);
+}
